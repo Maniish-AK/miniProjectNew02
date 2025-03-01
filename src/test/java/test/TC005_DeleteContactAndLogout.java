@@ -10,7 +10,7 @@ public class TC005_DeleteContactAndLogout extends ProjectSpecificationMethods {
 	
 	@BeforeTest
 	public void setup() {
-		sheetName="LoginAndAdd";
+		sheetName="Logout";
 		
 	}
 	

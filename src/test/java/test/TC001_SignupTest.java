@@ -24,7 +24,6 @@ public class TC001_SignupTest extends ProjectSpecificationMethods {
 		.enterEmail(email)
 		.enterPassword(password)
 		.clickSignupSubmit()
-		.isAddNewContactButtonVisible()
 		.clickLogout();
 	}
 

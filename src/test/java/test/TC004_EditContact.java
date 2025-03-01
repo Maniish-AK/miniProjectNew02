@@ -31,7 +31,7 @@ public class TC004_EditContact extends ProjectSpecificationMethods {
 	}
 	
 	@Test(priority=2, dataProvider = "excelRead")
-	public void editContactAndWitEmptyField(String email, String password) {
+	public void editContactAndWitEmptyField(String email, String password, String lastname, String editemail, String phone) {
 		
 		HomePage hp = new HomePage(driver);
 		hp.enterEmail(email)

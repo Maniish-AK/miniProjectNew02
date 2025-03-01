@@ -15,13 +15,12 @@ public class TC003_AddNewContact extends ProjectSpecificationMethods {
 	}
 	
 	@Test(priority=1, dataProvider = "excelRead")
-	public void addNewContactWithMissingFields(String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
+	public void addNewContactWithMissingFields(String invalidemail, String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
 		
 		HomePage hp = new HomePage(driver);
 		hp.enterEmail(email)
 		.enterPassword(password)
 		.clickLoginSubmit()
-		.isAddNewContactButtonVisible()
 		.clickAddNewContactButton()
 		.enterFirstName(firstname)
 		.enterLastName(lastname)
@@ -39,13 +38,12 @@ public class TC003_AddNewContact extends ProjectSpecificationMethods {
 	}
 	
 	@Test(priority=2, dataProvider = "excelRead")
-	public void addNewContactWithAllFields(String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
+	public void addNewContactWithAllFields(String invalidemail, String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
 		
 		HomePage hp = new HomePage(driver);
 		hp.enterEmail(email)
 		.enterPassword(password)
 		.clickLoginSubmit()
-		.isAddNewContactButtonVisible()
 		.clickAddNewContactButton()
 		.enterFirstName(firstname)
 		.enterLastName(lastname)
@@ -63,13 +61,12 @@ public class TC003_AddNewContact extends ProjectSpecificationMethods {
 	}
 	
 	@Test(priority=3, dataProvider = "excelRead")
-	public void addNewContactWithDuplicateValues(String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
+	public void addNewContactWithDuplicateValues(String invalidemail, String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
 		
 		HomePage hp = new HomePage(driver);
 		hp.enterEmail(email)
 		.enterPassword(password)
 		.clickLoginSubmit()
-		.isAddNewContactButtonVisible()
 		.clickAddNewContactButton()
 		.enterFirstName(firstname)
 		.enterLastName(lastname)
@@ -87,13 +84,12 @@ public class TC003_AddNewContact extends ProjectSpecificationMethods {
 	}
 	
 	@Test(priority=4, dataProvider = "excelRead")
-	public void addNewContactWithInvalidDateFormat(String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
+	public void addNewContactWithInvalidDateFormat(String invalidemail, String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
 		
 		HomePage hp = new HomePage(driver);
 		hp.enterEmail(email)
 		.enterPassword(password)
 		.clickLoginSubmit()
-		.isAddNewContactButtonVisible()
 		.clickAddNewContactButton()
 		.enterFirstName(firstname)
 		.enterLastName(lastname)

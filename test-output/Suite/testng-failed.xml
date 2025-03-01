@@ -3,19 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="Chrome"/>
   <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
-  <listeners>
-    <listener class-name="utils.ListenerClass"/>
-  </listeners>
-  <test thread-count="5" name="EditContactTest(failed)">
+  <test thread-count="5" name="AddNewContactTest(failed)">
     <classes>
-      <class name="test.TC004_EditContact">
+      <class name="test.TC003_AddNewContact">
         <methods>
           <include name="launchBrowser"/>
+          <include name="addNewContactWithMissingFields" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="editContactAndWitEmptyField"/>
           <include name="close"/>
+          <include name="addNewContactWithDuplicateValues" invocation-numbers="0"/>
+          <include name="addNewContactWithAllFields" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.TC004_EditContact -->
+      </class> <!-- test.TC003_AddNewContact -->
     </classes>
-  </test> <!-- EditContactTest(failed) -->
+  </test> <!-- AddNewContactTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

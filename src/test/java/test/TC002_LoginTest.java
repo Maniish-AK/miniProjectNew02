@@ -15,17 +15,17 @@ public class TC002_LoginTest extends ProjectSpecificationMethods {
 	}
 	
 	@Test(dataProvider = "excelRead")
-	public void loginTest(String email, String password) {
+	public void loginTest(String invalidemail, String email, String password, String firstname, String lastname, String birthdate, String addemail, String phone, String streetadd1, String streetadd2, String city, String stateprovince, String postalcode, String country) {
 		
 		HomePage hp = new HomePage(driver);
-		hp.enterInvalidEmail()
+		hp.enterInvalidEmail(invalidemail)
 		.enterPassword(password)
 		.clickLoginSubmitForInvalid()
 		.getLoginErrorMessage()
 		.enterEmail(email)
 		.enterPassword(password)
 		.clickLoginSubmit()
-		.isAddNewContactButtonVisible();
+		.clickLogout();
 	}
 
 }

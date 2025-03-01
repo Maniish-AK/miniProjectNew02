@@ -34,11 +34,11 @@ public class HomePage extends ProjectSpecificationMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public HomePage enterInvalidEmail() {
+	public HomePage enterInvalidEmail(String invalidemail) {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(emailField));
-		emailField.sendKeys("maniishguvi@com");
+		emailField.sendKeys(invalidemail);
 		return this;
 	}
 

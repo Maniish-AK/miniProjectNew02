@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-26T23:51:59 IST" name="Suite" finished-at="2025-02-26T23:52:08 IST" duration-ms="8568">
+  <suite started-at="2025-03-01T18:43:58 IST" name="Suite" finished-at="2025-03-01T18:47:27 IST" duration-ms="208407">
     <groups>
     </groups>
-    <test started-at="2025-02-26T23:51:59 IST" name="DeleteContactTest" finished-at="2025-02-26T23:52:08 IST" duration-ms="8568">
-      <class name="test.TC005_DeleteContact">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC005_DeleteContact@7905a0b8]" started-at="2025-02-26T23:51:59 IST" name="setup" finished-at="2025-02-26T23:51:59 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-03-01T18:43:58 IST" name="SignupTest" finished-at="2025-03-01T18:44:08 IST" duration-ms="9272">
+      <class name="test.TC001_SignupTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC001_SignupTest@6200f9cb]" started-at="2025-03-01T18:43:59 IST" name="setup" finished-at="2025-03-01T18:43:59 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_DeleteContact@7905a0b8]" started-at="2025-02-26T23:51:59 IST" name="launchBrowser" finished-at="2025-02-26T23:52:03 IST" duration-ms="3465" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_SignupTest@6200f9cb]" started-at="2025-03-01T18:44:00 IST" name="launchBrowser" finished-at="2025-03-01T18:44:04 IST" duration-ms="3854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,897 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="deleteContact()[pri:1, instance:test.TC005_DeleteContact@7905a0b8]" started-at="2025-02-26T23:52:03 IST" name="deleteContact" finished-at="2025-02-26T23:52:08 IST" duration-ms="4758" status="PASS">
+        <test-method signature="signupTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_SignupTest@6200f9cb]" started-at="2025-03-01T18:44:04 IST" name="signupTest" data-provider="excelRead" finished-at="2025-03-01T18:44:07 IST" duration-ms="3797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testguvi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testguviuser07@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[guvi123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteContact -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.TC005_DeleteContact@7905a0b8]" started-at="2025-02-26T23:52:08 IST" name="close" finished-at="2025-02-26T23:52:08 IST" duration-ms="124" status="PASS">
+        </test-method> <!-- signupTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC001_SignupTest@6200f9cb]" started-at="2025-03-01T18:44:07 IST" name="close" finished-at="2025-03-01T18:44:08 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- test.TC005_DeleteContact -->
+      </class> <!-- test.TC001_SignupTest -->
+    </test> <!-- SignupTest -->
+    <test started-at="2025-03-01T18:44:08 IST" name="LoginTest" finished-at="2025-03-01T18:44:15 IST" duration-ms="6668">
+      <class name="test.TC002_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC002_LoginTest@38e79ae3]" started-at="2025-03-01T18:44:08 IST" name="setup" finished-at="2025-03-01T18:44:08 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@38e79ae3]" started-at="2025-03-01T18:44:08 IST" name="launchBrowser" finished-at="2025-03-01T18:44:12 IST" duration-ms="3468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@38e79ae3]" started-at="2025-03-01T18:44:12 IST" name="loginTest" data-provider="excelRead" finished-at="2025-03-01T18:44:14 IST" duration-ms="2784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25-07-1996]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[davidbrown@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987612345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[654]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Cedar Drive]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Austin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[73301]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC002_LoginTest@38e79ae3]" started-at="2025-03-01T18:44:14 IST" name="close" finished-at="2025-03-01T18:44:15 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC002_LoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2025-03-01T18:44:15 IST" name="AddNewContactTest" finished-at="2025-03-01T18:46:47 IST" duration-ms="152382">
+      <class name="test.TC003_AddNewContact">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:44:15 IST" name="setup" finished-at="2025-03-01T18:44:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:44:15 IST" name="launchBrowser" finished-at="2025-03-01T18:44:19 IST" duration-ms="4119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addNewContactWithMissingFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:44:19 IST" name="addNewContactWithMissingFields" data-provider="excelRead" finished-at="2025-03-01T18:45:03 IST" duration-ms="43506" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25-07-1996]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[davidbrown@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987612345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[654]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Cedar Drive]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Austin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[73301]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+at test.TC003_AddNewContact.addNewContactWithMissingFields(TC003_AddNewContact.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[@class='contactTableBodyRow'])[1]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fcd4b985251f22afd26830711d0a8531, findElement {using=xpath, value=(//tr[@class='contactTableBodyRow'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62488/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcd4b985251f22afd26830711d0a8531
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewContactWithMissingFields -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:03 IST" name="close" finished-at="2025-03-01T18:45:03 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:03 IST" name="launchBrowser" finished-at="2025-03-01T18:45:06 IST" duration-ms="3131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addNewContactWithAllFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:06 IST" name="addNewContactWithAllFields" data-provider="excelRead" finished-at="2025-03-01T18:45:50 IST" duration-ms="43510" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25-07-1996]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[davidbrown@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987612345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[654]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Cedar Drive]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Austin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[73301]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+at test.TC003_AddNewContact.addNewContactWithAllFields(TC003_AddNewContact.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[@class='contactTableBodyRow'])[1]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15ff83d5c4848b79be2dba5a63dbf36b, findElement {using=xpath, value=(//tr[@class='contactTableBodyRow'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62533/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15ff83d5c4848b79be2dba5a63dbf36b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewContactWithAllFields -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:50 IST" name="close" finished-at="2025-03-01T18:45:50 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:50 IST" name="launchBrowser" finished-at="2025-03-01T18:45:54 IST" duration-ms="3812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addNewContactWithDuplicateValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:45:54 IST" name="addNewContactWithDuplicateValues" data-provider="excelRead" finished-at="2025-03-01T18:46:37 IST" duration-ms="43397" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25-07-1996]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[davidbrown@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987612345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[654]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Cedar Drive]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Austin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[73301]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//tr[@class='contactTableBodyRow'])[1]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+at test.TC003_AddNewContact.addNewContactWithDuplicateValues(TC003_AddNewContact.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[@class='contactTableBodyRow'])[1]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40c4504d94520b07cd72962dfc0d1f38, findElement {using=xpath, value=(//tr[@class='contactTableBodyRow'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 40c4504d94520b07cd72962dfc0d1f38
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewContactWithDuplicateValues -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:46:37 IST" name="close" finished-at="2025-03-01T18:46:37 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:46:37 IST" name="launchBrowser" finished-at="2025-03-01T18:46:42 IST" duration-ms="4068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addNewContactWithInvalidDateFormat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:46:42 IST" name="addNewContactWithInvalidDateFormat" data-provider="excelRead" finished-at="2025-03-01T18:46:47 IST" duration-ms="5276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25-07-1996]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[davidbrown@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987612345]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[654]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Cedar Drive]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Austin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[73301]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewContactWithInvalidDateFormat -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC003_AddNewContact@10d68fcd]" started-at="2025-03-01T18:46:47 IST" name="close" finished-at="2025-03-01T18:46:47 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC003_AddNewContact -->
+    </test> <!-- AddNewContactTest -->
+    <test started-at="2025-03-01T18:46:47 IST" name="EditContactTest" finished-at="2025-03-01T18:47:19 IST" duration-ms="31715">
+      <class name="test.TC004_EditContact">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:46:47 IST" name="setup" finished-at="2025-03-01T18:46:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:46:47 IST" name="launchBrowser" finished-at="2025-03-01T18:46:50 IST" duration-ms="2994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="editContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:46:50 IST" name="editContact" data-provider="excelRead" finished-at="2025-03-01T18:47:06 IST" duration-ms="16225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abrown]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[davidbrownupd@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContact -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:47:06 IST" name="close" finished-at="2025-03-01T18:47:07 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:47:07 IST" name="launchBrowser" finished-at="2025-03-01T18:47:11 IST" duration-ms="4257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="editContactAndWitEmptyField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:47:11 IST" name="editContactAndWitEmptyField" data-provider="excelRead" finished-at="2025-03-01T18:47:19 IST" duration-ms="7544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abrown]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[davidbrownupd@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContactAndWitEmptyField -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC004_EditContact@6e509ffa]" started-at="2025-03-01T18:47:19 IST" name="close" finished-at="2025-03-01T18:47:19 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC004_EditContact -->
+    </test> <!-- EditContactTest -->
+    <test started-at="2025-03-01T18:47:19 IST" name="DeleteContactTest" finished-at="2025-03-01T18:47:27 IST" duration-ms="8183">
+      <class name="test.TC005_DeleteContactAndLogout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC005_DeleteContactAndLogout@313b2ea6]" started-at="2025-03-01T18:47:19 IST" name="setup" finished-at="2025-03-01T18:47:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_DeleteContactAndLogout@313b2ea6]" started-at="2025-03-01T18:47:19 IST" name="launchBrowser" finished-at="2025-03-01T18:47:22 IST" duration-ms="3440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://thinking-tester-contact-list.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="deleteContact(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_DeleteContactAndLogout@313b2ea6]" started-at="2025-03-01T18:47:22 IST" name="deleteContact" data-provider="excelRead" finished-at="2025-03-01T18:47:27 IST" duration-ms="4447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maniishguvi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniish@0212]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteContact -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC005_DeleteContactAndLogout@313b2ea6]" started-at="2025-03-01T18:47:27 IST" name="close" finished-at="2025-03-01T18:47:27 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC005_DeleteContactAndLogout -->
     </test> <!-- DeleteContactTest -->
   </suite> <!-- Suite -->
 </testng-results>

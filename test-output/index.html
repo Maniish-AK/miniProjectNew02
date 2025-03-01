@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_AddNewContact" class="method navigator-link" hash-for-method="addNewContactWithAllFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">addNewContactWithAllFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_AddNewContact" class="method navigator-link" hash-for-method="addNewContactWithDuplicateValues(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">addNewContactWithDuplicateValues(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_AddNewContact" class="method navigator-link" hash-for-method="addNewContactWithMissingFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">addNewContactWithMissingFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +127,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC005_DeleteContact" class="method navigator-link" hash-for-method="deleteContact">deleteContact</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_AddNewContact" class="method navigator-link" hash-for-method="addNewContactWithInvalidDateFormat(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">addNewContactWithInvalidDateFormat(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC005_DeleteContactAndLogout" class="method navigator-link" hash-for-method="deleteContact(maniishguvi@gmail.com, Maniish@0212)">deleteContact(maniishguvi@gmail.com, Maniish@0212)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_EditContact" class="method navigator-link" hash-for-method="editContact(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)">editContact(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_EditContact" class="method navigator-link" hash-for-method="editContactAndWitEmptyField(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)">editContactAndWitEmptyField(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_LoginTest" class="method navigator-link" hash-for-method="loginTest(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">loginTest(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC001_SignupTest" class="method navigator-link" hash-for-method="signupTest(testguvi, user07, testguviuser07@gmail.com, guvi123)">signupTest(testguvi, user07, testguviuser07@gmail.com, guvi123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -118,17 +167,230 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC005_DeleteContact</span>
+              <img src="failed.png"/>
+              <span class="class-name">test.TC003_AddNewContact</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteContact">
-                  </a> <!-- deleteContact -->
+                  <a name="addNewContactWithAllFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">
+                  </a> <!-- addNewContactWithAllFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...) -->
+                  <span class="method-name">addNewContactWithAllFields</span>
+                  <span class="parameters">(maniishguvi@com,maniishguvi@gmail.com,Maniish@0212,David,Brown,25-07-1996,davidbrown@gmail.com,987612345,654,Cedar Drive,Austin,Texas,73301,United States)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//tr[@class=&apos;contactTableBodyRow&apos;])[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+	at test.TC003_AddNewContact.addNewContactWithAllFields(TC003_AddNewContact.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[@class=&apos;contactTableBodyRow&apos;])[1]&quot;}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15ff83d5c4848b79be2dba5a63dbf36b, findElement {using=xpath, value=(//tr[@class=&apos;contactTableBodyRow&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62533/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15ff83d5c4848b79be2dba5a63dbf36b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewContactWithDuplicateValues(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">
+                  </a> <!-- addNewContactWithDuplicateValues(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...) -->
+                  <span class="method-name">addNewContactWithDuplicateValues</span>
+                  <span class="parameters">(maniishguvi@com,maniishguvi@gmail.com,Maniish@0212,David,Brown,25-07-1996,davidbrown@gmail.com,987612345,654,Cedar Drive,Austin,Texas,73301,United States)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//tr[@class=&apos;contactTableBodyRow&apos;])[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+	at test.TC003_AddNewContact.addNewContactWithDuplicateValues(TC003_AddNewContact.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[@class=&apos;contactTableBodyRow&apos;])[1]&quot;}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40c4504d94520b07cd72962dfc0d1f38, findElement {using=xpath, value=(//tr[@class=&apos;contactTableBodyRow&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 40c4504d94520b07cd72962dfc0d1f38
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewContactWithMissingFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">
+                  </a> <!-- addNewContactWithMissingFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...) -->
+                  <span class="method-name">addNewContactWithMissingFields</span>
+                  <span class="parameters">(maniishguvi@com,maniishguvi@gmail.com,Maniish@0212,David,Brown,25-07-1996,davidbrown@gmail.com,987612345,654,Cedar Drive,Austin,Texas,73301,United States)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//tr[@class=&apos;contactTableBodyRow&apos;])[1]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ContactListPage.isContactGridVisible(ContactListPage.java:64)
+	at test.TC003_AddNewContact.addNewContactWithMissingFields(TC003_AddNewContact.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[@class=&apos;contactTableBodyRow&apos;])[1]&quot;}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fcd4b985251f22afd26830711d0a8531, findElement {using=xpath, value=(//tr[@class=&apos;contactTableBodyRow&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\srija\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62488/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcd4b985251f22afd26830711d0a8531
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC005_DeleteContactAndLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteContact(maniishguvi@gmail.com, Maniish@0212)">
+                  </a> <!-- deleteContact(maniishguvi@gmail.com, Maniish@0212) -->
                   <span class="method-name">deleteContact</span>
+                  <span class="parameters">(maniishguvi@gmail.com,Maniish@0212)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC004_EditContact</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContact(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)">
+                  </a> <!-- editContact(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789) -->
+                  <span class="method-name">editContact</span>
+                  <span class="parameters">(maniishguvi@gmail.com,Maniish@0212,Abrown,davidbrownupd@gmail.com,0123456789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContactAndWitEmptyField(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)">
+                  </a> <!-- editContactAndWitEmptyField(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789) -->
+                  <span class="method-name">editContactAndWitEmptyField</span>
+                  <span class="parameters">(maniishguvi@gmail.com,Maniish@0212,Abrown,davidbrownupd@gmail.com,0123456789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC002_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">
+                  </a> <!-- loginTest(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(maniishguvi@com,maniishguvi@gmail.com,Maniish@0212,David,Brown,25-07-1996,davidbrown@gmail.com,987612345,654,Cedar Drive,Austin,Texas,73301,United States)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC001_SignupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signupTest(testguvi, user07, testguviuser07@gmail.com, guvi123)">
+                  </a> <!-- signupTest(testguvi, user07, testguviuser07@gmail.com, guvi123) -->
+                  <span class="method-name">signupTest</span>
+                  <span class="parameters">(testguvi,user07,testguviuser07@gmail.com,guvi123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC003_AddNewContact</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewContactWithInvalidDateFormat(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)">
+                  </a> <!-- addNewContactWithInvalidDateFormat(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...) -->
+                  <span class="method-name">addNewContactWithInvalidDateFormat</span>
+                  <span class="parameters">(maniishguvi@com,maniishguvi@gmail.com,Maniish@0212,David,Brown,25-07-1996,davidbrown@gmail.com,987612345,654,Cedar Drive,Austin,Texas,73301,United States)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,12 +407,29 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://thinking-tester-contact-list.herokuapp.com/&quot;/&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;utils.ListenerClass&quot;/&gt;
-  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SignupTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC001_SignupTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignupTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC002_LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AddNewContactTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC003_AddNewContact&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddNewContactTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;EditContactTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC004_EditContact&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EditContactTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;DeleteContactTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.TC005_DeleteContact&quot;/&gt;
+      &lt;class name=&quot;test.TC005_DeleteContactAndLogout&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- DeleteContactTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -163,6 +442,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">SignupTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddNewContactTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EditContactTest (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">DeleteContactTest (1 class)</span>
               </li>
@@ -190,16 +481,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteContact')
-data.setCell(0, 2, 'test.TC005_DeleteContact')
-data.setCell(0, 3, 4758);
+data.setCell(0, 1, 'addNewContactWithAllFields')
+data.setCell(0, 2, 'test.TC003_AddNewContact')
+data.setCell(0, 3, 43510);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addNewContactWithMissingFields')
+data.setCell(1, 2, 'test.TC003_AddNewContact')
+data.setCell(1, 3, 43506);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addNewContactWithDuplicateValues')
+data.setCell(2, 2, 'test.TC003_AddNewContact')
+data.setCell(2, 3, 43397);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'editContact')
+data.setCell(3, 2, 'test.TC004_EditContact')
+data.setCell(3, 3, 16225);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editContactAndWitEmptyField')
+data.setCell(4, 2, 'test.TC004_EditContact')
+data.setCell(4, 3, 7544);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addNewContactWithInvalidDateFormat')
+data.setCell(5, 2, 'test.TC003_AddNewContact')
+data.setCell(5, 3, 5276);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteContact')
+data.setCell(6, 2, 'test.TC005_DeleteContactAndLogout')
+data.setCell(6, 3, 4447);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signupTest')
+data.setCell(7, 2, 'test.TC001_SignupTest')
+data.setCell(7, 3, 3797);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginTest')
+data.setCell(8, 2, 'test.TC002_LoginTest')
+data.setCell(8, 3, 2784);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,22 +548,152 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TC005_DeleteContact</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TC001_SignupTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">1315 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteContact</span>
-                <span class="method-start">3500 ms</span>
+                <span class="method-name">signupTest(testguvi, user07, testguviuser07@gmail.com, guvi123)</span>
+                <span class="method-start">5172 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">8430 ms</span>
+                <span class="method-start">8971 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC002_LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9340 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">9597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</span>
+                <span class="method-start">13070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">15856 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC003_AddNewContact</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">16062 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">16353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewContactWithMissingFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</span>
+                <span class="method-start">20472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">63987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">64377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewContactWithAllFields(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</span>
+                <span class="method-start">67508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">111020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">111389 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewContactWithDuplicateValues(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</span>
+                <span class="method-start">115202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">158607 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">158912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewContactWithInvalidDateFormat(maniishguvi@com, maniishguvi@gmail.com, Maniish@0212, David, Brown, 25-07-1996, davidbrown@gmail.com...)</span>
+                <span class="method-start">162980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">168257 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_EditContact</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">168475 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">168718 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editContact(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)</span>
+                <span class="method-start">171712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">187939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">188242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editContactAndWitEmptyField(maniishguvi@gmail.com, Maniish@0212, Abrown, davidbrownupd@gmail.com, 0123456789)</span>
+                <span class="method-start">192499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">200045 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC005_DeleteContactAndLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">200199 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome, https://thinking-tester-contact-list.herokuapp.com/)</span>
+                <span class="method-start">200377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteContact(maniishguvi@gmail.com, Maniish@0212)</span>
+                <span class="method-start">203817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">208265 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

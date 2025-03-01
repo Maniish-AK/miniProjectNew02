@@ -34,16 +34,18 @@ public class ContactListPage extends ProjectSpecificationMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public ContactListPage isAddNewContactButtonVisible() {
-
-		addNewContactButton.isDisplayed();
-		return this;
-	}
+//	public ContactListPage isAddNewContactButtonVisible() {
+//
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.visibilityOf(addNewContactButton));
+//		addNewContactButton.isDisplayed();
+//		return this;
+//	}
 
 	public HomePage clickLogout() {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(firstContact));
+		wait.until(ExpectedConditions.visibilityOf(addNewContactButton));
 		logoutButton.click();
 		return new HomePage(driver);
 	}
